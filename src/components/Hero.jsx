@@ -10,9 +10,13 @@ const Hero = () => {
   return (
     <div className="text-[#D1F26D] my-10">
       <div className="hero-content justify-between flex-col lg:flex-row-reverse mb-10">
-        <img src={heroImg} className="lg:max-w-md rounded-lg shadow-2xl" />
-        <div className="lg:px-32 px-3">
-          <h1 className="text-5xl font-bold flex">
+        <img
+          src={heroImg}
+          className="lg:max-w-md max-w-sm rounded-lg shadow-2xl px-5"
+        />
+
+        <div className="lg:px-32 px-3 lg:py-2 py-10 lg:text-left">
+          <h1 className="lg:text-5xl text-4xl font-bold flex items-center">
             Hello, I am Bristy!
             <motion.span
               className="ml-4"
@@ -22,24 +26,36 @@ const Hero = () => {
               <PiHandWavingDuotone />
             </motion.span>
           </h1>
-          <p className="py-4 text-justify">
-            I'm a <span className="text-4xl font-medium">Junior Developer!</span>
+          <p className="py-4">
+            I'm a{" "}
+            <span className="lg:text-4xl text-3xl font-medium">
+              Junior Developer!
+            </span>
           </p>
-          <p className="pb-6">
-            I work with <span className="font-semibold text-lg">JavaScript</span> and have
-            made full-stack projects using <br/> the <span className="font-semibold text-lg">MERN stack</span>.
+          <p className="pb-6 text-justify">
+            Focused on{" "}
+            <span className="font-semibold">Frontend Development</span> |
+            Exploring{" "}
+            <span className="font-semibold">Backend Technologies</span> |
+            Experienced in Building Full Stack projects with the{" "}
+            <span className="font-semibold">MERN Stack</span>.
           </p>
+          <div className="text-[#D1F26D] border-b border-[#F2F1DB] my-3"></div>
 
-          <div className="text-[#D1F26D] border-b border-[#F2F1DB] my-5"></div>
-
-          <div className="flex gap-10 text-2xl lg:ml-2">
-            <Link to="https://github.com/Rain44556">
+          <div className="flex gap-10 text-3xl px-3 py-4">
+            <Link
+              to="https://github.com/Rain44556"
+              className="hover:text-white"
+            >
               <FaGithubAlt />
             </Link>
-            <Link to="https://www.linkedin.com/in/bris-ty-b09707262/">
+            <Link
+              to="https://www.linkedin.com/in/bris-ty-b09707262/"
+              className="hover:text-white"
+            >
               <FaLink />
             </Link>
-            <Link to="https://x.com/Rain44556">
+            <Link to="https://x.com/Rain44556" className="hover:text-white">
               <FaXTwitter />
             </Link>
           </div>
