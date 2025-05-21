@@ -28,19 +28,28 @@ const data = {
   ],
   publications: [
     {
-      title: "Few Shot Learning for Medical Imaging: A Comparative Analysis of Methodologies and Formal Mathematical Framework",
+      title:
+        "Hand Gesture Recognition Based Speed and Direction Control of DC Motor Using CNN",
+      subtitle: "Conference paper",
+      location: "Published in ICISET",
+      date: "October 2024",
+      logo: "https://i.ibb.co.com/rRXnSQY1/ieee.png",
+    },
+    {
+      title:
+        "Few Shot Learning for Medical Imaging: A Comparative Analysis of Methodologies and Formal Mathematical Framework",
       subtitle: "Book Chapter",
       location: "Published in Springer Nature",
       date: "October 2023",
       logo: "https://i.ibb.co.com/M5ktBkxN/images-1.jpg",
     },
     {
-      title: "GSM Based System for Vehicle Gas Leakage Detection and Driver Condition Assessment",
+      title:
+        "GSM Based System for Vehicle Gas Leakage Detection and Driver Condition Assessment",
       subtitle: "Conference paper",
       location: "Published in ICAECOT",
       date: "October 2024",
       logo: "https://i.ibb.co.com/rRXnSQY1/ieee.png",
-     
     },
   ],
   activities: [
@@ -66,7 +75,7 @@ const Education = () => {
         </p>
       </div>
 
-      <div className="flex justify-center gap-4 mb-6">
+      <div className="flex flex-wrap justify-center gap-4 mb-6">
         {Tabs.map((tab) => (
           <button
             key={tab}
@@ -75,14 +84,15 @@ const Education = () => {
               activeTab === tab
                 ? "bg-lime-600 text-white"
                 : "bg-lime-200 text-gray-700"
-            } transition-all`}> 
+            } transition-all`}
+          >
             {tab}
           </button>
         ))}
       </div>
 
-      <div className="relative w-full max-w-7xl mx-auto mt-16">
-        <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-lime-100 h-full"></div>
+      <div className="relative w-full max-w-7xl mx-auto mt-16 md:p-0 p-5">
+        <div className=" absolute left-1/2 transform -translate-x-1/2 w-1 bg-lime-100 h-full"></div>
 
         {data[activeTab.toLowerCase()].map((item, index) => (
           <motion.div
@@ -92,12 +102,12 @@ const Education = () => {
             transition={{ duration: 0.5, delay: index * 0.2 }}
             className={`flex items-center mb-8 ${
               index % 2 === 0 ? "justify-start" : "justify-end"
-            }`}>
-              
+            }`}
+          >
             <div className="w-4 h-4 bg-gray-800 rounded-full absolute left-1/2 transform -translate-x-1/2"></div>
 
-            <div className="bg-gray-800 shadow-lg rounded-xl p-10 w-5/12 relative">
-              <div className="flex items-center space-x-2">
+            <div className="bg-gray-800 shadow-lg rounded-xl p-10 w-full md:w-5/12 relative">
+              <div className="flex gap-5 items-center">
                 <img
                   src={item.logo}
                   alt="logo"
