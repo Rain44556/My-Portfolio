@@ -16,10 +16,10 @@ const Hero = () => {
         />
 
         <div className="lg:px-32 px-3 lg:py-2 py-10 lg:text-left">
-          <h1 className="lg:text-5xl text-4xl font-bold flex items-center">
-            Hello, I am Bristy!
+          <h1 className="lg:text-5xl text-4xl font-bold flex gap-4 items-center">
+            Hello, I'm Bristy!
             <motion.span
-              className="ml-4"
+            className="lg:text-6xl text-5xl"
               animate={{ rotate: [0, 15, -10, 5, -5, 0] }}
               transition={{ duration: 1.5, repeat: Infinity }}
             >
