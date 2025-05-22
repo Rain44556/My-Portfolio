@@ -42,7 +42,7 @@ const Contact = () => {
           </Link>
     </div>
 
-    <div className="card w-full max-w-lg mx-auto shrink-0 shadow-2xl py-10">
+    <div className="card w-full max-w-xl px-3 mx-auto shrink-0 shadow-2xl py-10">
       <form className="card-body">
 
       <div className="form-control">
@@ -52,7 +52,7 @@ const Contact = () => {
           <input type="email" placeholder="Enter Email Address" className="input bg-gray-800 px-6 py-6 input-bordered" required />
         </div>
         <div className="form-control">
-          <textarea className="textarea bg-gray-800 px-6 mt-2" placeholder="Message"></textarea>        </div>
+          <textarea className="textarea bg-gray-800 px-6 mt-2 h-[130px]" placeholder="Message"></textarea>        </div>
         <div className="form-control mt-6">
           <button className="btn bg-[#D1F26D] border-none text-[#3B4D3A] hover:bg-lime-600 hover:text-white">Send</button>
         </div>
