@@ -42,7 +42,7 @@ const Contact = () => {
           </Link>
     </div>
 
-    <div className="card w-full max-w-lg shrink-0 shadow-2xl py-10">
+    <div className="card w-full max-w-lg mx-auto shrink-0 shadow-2xl py-10">
       <form className="card-body">
 
       <div className="form-control">
