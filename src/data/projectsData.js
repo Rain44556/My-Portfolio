@@ -1,8 +1,41 @@
 const projectsData = [
+    {
+  "id": 1,
+  "name": "Weather App",
+  "image": "../../public/assets/images/weather-app.png",
+  "techStack": [
+    "React",
+    "Redux Toolkit",
+    "Tailwind CSS",
+    "Axios",
+    "Firebase",
+    "OpenWeatherMap API",
+    "Dark Mode",
+    "Responsive Design",
+  ],
+  "description": "Based on city input, this weather app displays current weather conditions. It shows the current temperature, weather condition, wind speed, humidity, and other relevant data. The app supports dark mode and is fully responsive, offering a smooth user experience across all device sizes. It also handles loading and error states while storing search data in the app state.",
+  "liveLink": "https://weather-app-d38c1.web.app/",
+  "github": "https://github.com/Rain44556/Weather-App",
+  "challenges": [
+    "Handling dynamic API responses and ensuring graceful error states for invalid city names",
+    "Implementing dark mode toggle that persists across sessions",
+    "Making the app fully responsive while maintaining design consistency"
+  ],
+  "improvements": [
+    "Add unit switching (Celsius ↔ Fahrenheit)",
+    "Implement geolocation-based weather display",
+    "Optimize performance for slower network conditions"
+  ],
+  "plans": [
+    "Display a 5-day weather forecast with graphical representation",
+    "Include weather alerts or advisories if available via the API",
+    "Enable local storage to cache recent searches"
+  ]
+  },
   {
-    id: 1,
+    id: 2,
     name: "Popcorn Picks",
-    image: "../assets/images/movie.png",
+    image: "../../public/assets/images/movie.png",
     techStack: [
       "React Router Dom",
       "React Icons",
@@ -36,15 +69,10 @@ const projectsData = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     name: "Caffeine Craft",
-    image: "../assets/images/coffee.png",
-    techStack: [
-      "React.js",
-      "React Reveal",
-      "Vanila CSS",
-      "Netlify"
-    ],
+    image: "../../public/assets/images/coffee.png",
+    techStack: ["React.js", "React Reveal", "Vanila CSS", "Netlify"],
     description:
       "Caffiene Craft is a coffee website built using React. The Header component features a navigation bar with a sticky design and scroll effect. It includes three main navigation links: Home, Items, and Place. The Star Section component is simple and elegant, designed to highlight a hero section with a call to action that encourages users to scroll and place an order. There's a unique coffee category section showcasing different types of coffee. For animations, I’ve implemented React Reveal, creating beautiful effects throughout the site. The Items component is well-structured and displays a variety of drinks, meals, and desserts. It features category-based filtering, animations using React Reveal, and utilizes JSON data for dynamic rendering. My Place component is also well-organized, allowing users to switch between location images dynamically. Lastly, I added a beautiful and simple footer to complete the website.",
     liveLink: "https://caffeine-craft.netlify.app/",
@@ -66,7 +94,7 @@ const projectsData = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     name: "Pet Squad",
     image: "../assets/images/pet.png",
     techStack: [
@@ -83,7 +111,7 @@ const projectsData = [
       "MongoDB",
       "Firebase",
       "Express.js",
-      "Node.js"
+      "Node.js",
     ],
     description:
       "Pet Squad is a website that helps pet owners find new homes for their animals by connecting them with animal shelters. On the site, visitors can easily apply for adoptions, search for pets, and filter their results by categories. Users can create accounts using Firebase Authentication, which keeps their information safe. The site also uses JWT (JSON Web Token) for secure connections. To manage pet data, Pet Squad uses TanStack Query with MongoDB, making it easy to fetch, cache, and update information. A highlight of Pet Squad is its donation campaign feature. This allows users to donate money to help provide food, medical care, and shelter for rescued animals. Donations are made through secure payment options to ensure a safe and transparent process",
@@ -107,7 +135,7 @@ const projectsData = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     name: "Task Buddy",
     image: "../assets/images/task-buddy.png",
     techStack: [
