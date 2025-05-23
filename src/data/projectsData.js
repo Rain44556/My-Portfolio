@@ -173,6 +173,33 @@ const projectsData = [
       "Personalized user dashboards",
     ],
   },
+      {
+  "id": 6,
+  "name": "Parallax Scrolling Effect",
+  "image": "../../public/assets/images/parallax.png",
+  "techStack": [
+    "HTML",
+    "CSS",
+    "VanilLa JS"
+  ],
+  "description": "A simple parallax scrolling website created using HTML, CSS, and vanilla JavaScript. This project shows how different layers, such as background images, content, and text-scroll at varying speeds to create a visually immersive effect. It's lightweight, responsive, and offers a clean structure for storytelling or landing pages.",
+  "liveLink": "https://weather-app-d38c1.web.app/",
+  "github": "https://github.com/Rain44556/Weather-App",
+  "challenges": [
+   "Achieving smooth scroll-based animations using pure JavaScript",
+    "Maintaining performance and responsiveness across all device sizes",
+    "Managing layer depths and z-index effectively for visual consistency"
+  ],
+  "improvements": [
+    "Add more parallax layers",
+    "Implement intersection observers for animation triggers",
+    "Add support for scroll snapping between sections"
+  ],
+  "plans": [
+    "Use a CSS framework for faster styling",
+    "Rewrite the project using React for better scalability"
+  ]
+  },
 ];
 
 export default projectsData;
