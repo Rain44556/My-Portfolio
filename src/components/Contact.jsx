@@ -1,10 +1,8 @@
-import React, { useState } from "react";
 import { MdAttachEmail } from "react-icons/md";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
-import axios from "axios";
 
 const Contact = () => {
   const handleSendMessage = async (e) => {
@@ -21,21 +19,20 @@ const Contact = () => {
     const publicID = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
     const templateParams = {
-      user_name: userName,
-      user_Email: userEmail,
+      userName: userName,
+      userEmail: userEmail,
       subject: subject,
       message: message,
     };
 
     try{
-      const res = await emailjs.send(serviceID, templateID, templateParams, publicID);
-        console.log("SUCCESS!", res.status, res.text);
+    const res = await emailjs.send(serviceID, templateID, templateParams, publicID);
     form.reset();
     alert("Message sent successfully!");
   } catch (error) {
-    console.error("FAILED...", error);
     alert("Something went wrong. Please try again.");
   }
+
   }
 
   return (
@@ -85,8 +82,7 @@ const Contact = () => {
               <input
                 name="userName"
                 type="text"
-                // value={userName}
-                placeholder="Enter Full Name"
+                placeholder="Name"
                 className="input bg-gray-800 px-6 py-6 input-bordered"
                 required
               />
@@ -95,8 +91,7 @@ const Contact = () => {
               <input
                 name="userEmail"
                 type="email"
-                // value={userEmail}
-                placeholder="Enter Email Address"
+                placeholder="Email"
                 className="input bg-gray-800 px-6 py-6 input-bordered"
                 required
               />
@@ -105,8 +100,7 @@ const Contact = () => {
               <input
                 name="subject"
                 type="subject"
-                // value={subject}
-                placeholder="Enter Subject"
+                placeholder="Subject"
                 className="input bg-gray-800 px-6 py-6 input-bordered"
                 required
               />
@@ -114,8 +108,7 @@ const Contact = () => {
             <div className="form-control">
               <textarea
                 name="message"
-                className="textarea bg-gray-800 px-6 mt-2 h-[130px]"
-                // value={message}
+                className="textarea bg-gray-800 text-lg px-6 mt-2 h-[130px]"
                 placeholder="Message"
                 required
               ></textarea>
