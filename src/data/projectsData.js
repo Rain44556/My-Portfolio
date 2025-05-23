@@ -183,8 +183,8 @@ const projectsData = [
     "VanilLa JS"
   ],
   "description": "A simple parallax scrolling website created using HTML, CSS, and vanilla JavaScript. This project shows how different layers, such as background images, content, and text-scroll at varying speeds to create a visually immersive effect. It's lightweight, responsive, and offers a clean structure for storytelling or landing pages.",
-  "liveLink": "https://weather-app-d38c1.web.app/",
-  "github": "https://github.com/Rain44556/Weather-App",
+  "liveLink": "https://simple-parallax-scrolling-effect.netlify.app/",
+  "github": "https://github.com/Rain44556/Parallax-Scrolling-Effect",
   "challenges": [
    "Achieving smooth scroll-based animations using pure JavaScript",
     "Maintaining performance and responsiveness across all device sizes",
