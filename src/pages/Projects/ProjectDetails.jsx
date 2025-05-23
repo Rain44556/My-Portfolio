@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
-import projectsData from "../../data/projectsData";
+import projectsData from "../../utls/projectsData";
 import { FaGithub, FaLink } from "react-icons/fa";
 
 const fadeIn = {

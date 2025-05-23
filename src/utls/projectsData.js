@@ -2,7 +2,7 @@ const projectsData = [
     {
   "id": 1,
   "name": "Weather App",
-  "image": "../../public/assets/images/weather-app.png",
+  "image": "../assets/images/weather-app.png",
   "techStack": [
     "React",
     "Redux Toolkit",
@@ -35,7 +35,7 @@ const projectsData = [
   {
     id: 2,
     name: "Popcorn Picks",
-    image: "../../public/assets/images/movie.png",
+    image: "../assets/images/movie.png",
     techStack: [
       "React Router Dom",
       "React Icons",
@@ -71,7 +71,7 @@ const projectsData = [
   {
     id: 3,
     name: "Caffeine Craft",
-    image: "../../public/assets/images/coffee.png",
+    image: "../assets/images/coffee.png",
     techStack: ["React.js", "React Reveal", "Vanila CSS", "Netlify"],
     description:
       "Caffiene Craft is a coffee website built using React. The Header component features a navigation bar with a sticky design and scroll effect. It includes three main navigation links: Home, Items, and Place. The Star Section component is simple and elegant, designed to highlight a hero section with a call to action that encourages users to scroll and place an order. There's a unique coffee category section showcasing different types of coffee. For animations, I’ve implemented React Reveal, creating beautiful effects throughout the site. The Items component is well-structured and displays a variety of drinks, meals, and desserts. It features category-based filtering, animations using React Reveal, and utilizes JSON data for dynamic rendering. My Place component is also well-organized, allowing users to switch between location images dynamically. Lastly, I added a beautiful and simple footer to complete the website.",
@@ -176,7 +176,7 @@ const projectsData = [
       {
   "id": 6,
   "name": "Parallax Scrolling Effect",
-  "image": "../../public/assets/images/parallax.png",
+  "image": "../assets/images/parallax.png",
   "techStack": [
     "HTML",
     "CSS",
