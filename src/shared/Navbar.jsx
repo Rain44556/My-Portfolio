@@ -48,7 +48,7 @@ const Navbar = () => {
             </Link> */}
         </div>
 
-        <div className="navbar-center hidden lg:flex p-2 rounded-full font-semibold text-[#D1F26D]">
+        <div className="navbar-end hidden lg:flex p-2 rounded-full font-semibold text-[#D1F26D]">
                 <ul className="menu menu-horizontal px-1">
                     {menu}
 

@@ -1,10 +1,5 @@
-import React from 'react';
 import ProjectCard from './ProjectCard';
 import projectsData from "../data/projectsData"
-// import movie from "../../public/images/movie.png"
-// import pet from "../../public/images/pet.png"
-// import buddy from "../../public/images/task-buddy.png"
-// import coffee from "../../public/images/coffee.png"
 
 
 const Projects = () => {

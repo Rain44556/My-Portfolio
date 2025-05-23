@@ -12,7 +12,7 @@ const ProjectCard = ({ project }) => {
       <img
         src={project.image}
         alt={project.name}
-        className="w-full h-full group-hover:opacity-30 transition-opacity duration-300"
+        className="w-full h-full object-cover group-hover:opacity-20 transition-opacity duration-300"
       />
 
       <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
